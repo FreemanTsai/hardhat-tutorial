@@ -54,10 +54,10 @@ Ethers.js是與以太坊區塊鏈交互的SDK，Waffle是測試合約的輕量�
 ```
 
 #### Hardhat框架結構
-**contracts** 智能合約的程式碼放在這，包括抽象合約 
-**scripts** 部署合約的script 
-**test** 自動化測試案例 
-**hardhat.config.js** Hardhat框架的配置 
+**contracts** 智能合約的程式碼放在這，包括抽象合約  
+**scripts** 部署合約的script  
+**test** 自動化測試案例  
+**hardhat.config.js** Hardhat框架的配置  
 
 到這邊，一個Hardhat專案就建置完成了，我們開始開發智能合約吧
 
@@ -201,7 +201,7 @@ Contract address: 0x........................
 合約部署完成！可以到[Rinkeby Etherscan](https://rinkeby.etherscan.io/)上查找剛剛部署的合約！
 到錢包裡面，Import Token裡貼上合約地址，就可以看到我們發行的Token囉！
 
-參考資料：
-[The Complete Hands-On Hardhat Tutorialh](https://betterprogramming.pub/the-complete-hands-on-hardhat-tutorial-9e23728fc8a4)
+參考資料：  
+[The Complete Hands-On Hardhat Tutorialh](https://betterprogramming.pub/the-complete-hands-on-hardhat-tutorial-9e23728fc8a4)  
 [Hardhat官方Tutorial](https://hardhat.org/tutorial)
 
