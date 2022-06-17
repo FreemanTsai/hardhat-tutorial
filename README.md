@@ -3,10 +3,9 @@
 這個專案紀錄學習智能合約開發的過程，希望能幫助到入門的朋友。
 
 學習重點有：
-- 使用Hardhat框架
-- 發行 ERC20 token
-- 製作 dApp, 免費領取token
-- 部署到不同的鏈, Ethereum & Avalanche
+- 使用Hardhat框架開發、測試合約
+- 基於ERC20標準發行Token
+- 部署合約到測試鏈
 
 
 ## 建立Hardhat專案
@@ -54,11 +53,11 @@ Ethers.js是與以太坊區塊鏈交互的SDK，Waffle是測試合約的輕量�
 ✔ Do you want to install this sample project's dependencies with npm (@nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers)? (Y/n) · y
 ```
 
-##### Hardhat框架結構
-**contracts** 智能合約的程式碼放在這，包括抽象合約
-**scripts** 存放合約的部署script
-**test** 自動化測試案例
-**hardhat.config.js** Hardhat框架的配置
+#### Hardhat框架結構
+**contracts** 智能合約的程式碼放在這，包括抽象合約 
+**scripts** 部署合約的script 
+**test** 自動化測試案例 
+**hardhat.config.js** Hardhat框架的配置 
 
 到這邊，一個Hardhat專案就建置完成了，我們開始開發智能合約吧
 
@@ -66,7 +65,7 @@ Ethers.js是與以太坊區塊鏈交互的SDK，Waffle是測試合約的輕量�
 
 智能合約中常見的標準有ERC20、ERC721、ERC1155，這邊用ERC20標準來發行Token
 
-##### OpenZeppelin
+#### OpenZeppelin
 OpenZeppelin具備各種標準的合約庫且經過安全審計，可以基於合約庫再擴充其他功能，是個安全又方便的開發工具
 
 安裝OpenZeppelin到專案中
@@ -74,7 +73,7 @@ OpenZeppelin具備各種標準的合約庫且經過安全審計，可以基於�
 npm install --save-dev @openzeppelin/contracts 
 ```
 
-##### 建立ERC20合約
+#### 建立ERC20合約
 可以使用[OpenZeppelin Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard)找到ERC20的合約範本
 到資料夾contracts內，新增檔案MyToken.sol，將程式碼貼上
 ```javascript
@@ -97,7 +96,7 @@ contract MyToken is ERC20, ERC20Burnable, Ownable {
 ```
 如需參考OpenZeppelin原始碼可以點[這裡](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20)
 
-##### 測試合約
+#### 測試合約
 增加測試案例，在資料夾test中新增MyToken-test.js，貼上程式碼
 ```javascript
 const { expect } = require("chai");
@@ -173,7 +172,7 @@ module.exports = {
   }
 };
 ```
-##### 部署script
+#### 部署script
 
 在scripts內新增MyToken-deploy.js，並貼上程式碼
 ```javascript
