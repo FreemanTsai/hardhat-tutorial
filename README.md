@@ -9,8 +9,8 @@
 
 
 ## 建立Hardhat專案
-我們將使用npm安裝Hardhat，npm是Node.js預設的套件管理工具。
-創建專案資料夾並安裝hardhat。
+我們將使用npm安裝Hardhat，npm是Node.js預設的套件管理工具  
+創建專案資料夾並安裝hardhat
 ```javascript
 // 創建project folder
 mkdir hardhat-tutorial
@@ -43,9 +43,9 @@ npx hardhat
   Quit
 ```
 
-接這會跳出三個選項，都按enter就可以了
-最後一項是安裝兩個必要套件Ethers.js 及 Waffle
-Ethers.js是與以太坊區塊鏈交互的SDK，Waffle是測試合約的輕量化工具
+接這會跳出三個選項，都按enter就可以了  
+最後一項是安裝兩個必要套件Ethers.js 及 Waffle  
+Ethers.js是與以太坊區塊鏈交互的SDK，Waffle是測試合約的輕量化工具  
 ```javascript
 ✔ What do you want to do? · Create a basic sample project
 ✔ Hardhat project root: · /hardhat-tutorial
@@ -74,7 +74,7 @@ npm install --save-dev @openzeppelin/contracts
 ```
 
 #### 建立ERC20合約
-可以使用[OpenZeppelin Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard)找到ERC20的合約範本
+可以使用[OpenZeppelin Wizard](https://docs.openzeppelin.com/contracts/4.x/wizard)找到ERC20的合約範本  
 到資料夾contracts內，新增檔案MyToken.sol，將程式碼貼上
 ```javascript
 //SPDX-License-Identifier: MIT
@@ -137,12 +137,12 @@ describe("MyToken.sol", () => {
 
 ## 部署合約
 
-我們要將完成的合約部署到測試鏈上，測試鏈有許多選擇，而這邊選用Rinkeby
-部署合約之前，我們需要先準備一些測試鏈用的ETH，以及申請一個測試節點
+我們要將完成的合約部署到測試鏈上，測試鏈有許多選擇，而這邊選用Rinkeby  
+部署合約之前，我們需要先準備一些測試鏈用的ETH，以及申請一個測試節點  
 
-測試用的ETH可以使用[ChainLink](https://faucets.chain.link/)領取，只需要連結錢包就可以了，記得在狐狸錢包內選到Rinkeby網路
-節點服務可以使用[Alchemy](https://www.alchemy.com/)，註冊後建立app時選擇Rinkeby網路，就可以拿到api url了
-另外要再取得錢包的private key，在Metamask錢包內Account旁邊的選項內找到帳戶詳情，就可以導出private key了
+測試用的ETH可以使用[ChainLink](https://faucets.chain.link/)領取，只需要連結錢包就可以了，記得在狐狸錢包內選到Rinkeby網路  
+節點服務可以使用[Alchemy](https://www.alchemy.com/)，註冊後建立app時選擇Rinkeby網路，就可以拿到api url了  
+另外要再取得錢包的private key，在Metamask錢包內Account旁邊的選項內找到帳戶詳情，就可以導出private key了  
 
 在部署前，我們先用dotenv來保護敏感設定的安全，下方指令安裝dotenv
 ```javascript
@@ -198,10 +198,10 @@ main()
 npx hardhat run scripts/MyToken-deploy.js --network rinkeby  
 Contract address: 0x........................   
 ```
-合約部署完成！可以到[Rinkeby Etherscan](https://rinkeby.etherscan.io/)上查找剛剛部署的合約！
+合約部署完成！可以到[Rinkeby Etherscan](https://rinkeby.etherscan.io/)上查找剛剛部署的合約！  
 到錢包裡面，Import Token裡貼上合約地址，就可以看到我們發行的Token囉！
 
 參考資料：  
-[The Complete Hands-On Hardhat Tutorialh](https://betterprogramming.pub/the-complete-hands-on-hardhat-tutorial-9e23728fc8a4)  
+[The Complete Hands-On Hardhat Tutorial](https://betterprogramming.pub/the-complete-hands-on-hardhat-tutorial-9e23728fc8a4)  
 [Hardhat官方Tutorial](https://hardhat.org/tutorial)
 
