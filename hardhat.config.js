@@ -1,12 +1,23 @@
 require("@nomiclabs/hardhat-waffle");
 require("dotenv").config();
-const { RINKEBY_URL, PRIVATE_KEY } = process.env;
+require("@nomiclabs/hardhat-etherscan");
+
 module.exports = {
   solidity: "0.8.4",
   networks: {
     rinkeby: {
-      url: RINKEBY_URL,
-      accounts: [`0x${PRIVATE_KEY}`]
+      url: process.env.RINKEBY_URL,
+      accounts: [`0x${process.env.PRIVATE_KEY}`]
+    },
+    goerli: {
+      url: process.env.GOERLI_URL,
+      accounts: [`0x${process.env.PRIVATE_KEY}`],
+      gas: 2100000,
+      gasPrice: 8000000000,
+      saveDeployments: true,
     }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY
   }
 };
