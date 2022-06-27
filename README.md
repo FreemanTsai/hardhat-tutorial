@@ -12,18 +12,18 @@
 
 事不宜遲，就讓我們開始吧！
 
-主線任務：
-[智能合約開發 Part1 - Hardhat環境設置](/doc/HARDHAT_TUTORIAL.md)
-[智能合約開發 Part2 - ERC20 Token](/doc/ERC20_TUTORIAL.md)
-[智能合約開發 Part3 - ERC721 NFT](/doc/ERC721_TUTORIAL.md)
-~~[智能合約開發 Part4  - ERC1155](doc/ERC1155_TUTORIAL.md)~~ Cooming soon...
-~~[智能合約開發 Part5  - DApp](/doc/DAPP_TUTORIAL.md)~~ Cooming soon...
+主線任務：  
+[智能合約開發 Part1 - Hardhat環境設置](/doc/HARDHAT_TUTORIAL.md)  
+[智能合約開發 Part2 - ERC20 Token](/doc/ERC20_TUTORIAL.md)  
+[智能合約開發 Part3 - ERC721 NFT](/doc/ERC721_TUTORIAL.md)  
+~~[智能合約開發 Part4  - ERC1155](doc/ERC1155_TUTORIAL.md)~~ Cooming soon...  
+~~[智能合約開發 Part5  - DApp](/doc/DAPP_TUTORIAL.md)~~ Cooming soon...  
 
-其他：
-[智能合約開發 - 在Etherscan上取得認證](/doc/VERIFY_CONTRACT.md)
+其他：  
+[智能合約開發 - 在Etherscan上取得認證](/doc/VERIFY_CONTRACT.md)  
 
-更多學習資源：
-Solidity學習 - [Crypto Zombie](https://cryptozombies.io/)
+更多學習資源：  
+Solidity學習 - [Crypto Zombie](https://cryptozombies.io/)  
 
-我的Link Tree: https://linktr.ee/freemantsai
+我的Link Tree: https://linktr.ee/freemantsai  
 
